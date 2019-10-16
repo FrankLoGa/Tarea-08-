@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/photo_iv"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="110dp"
+
+         />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/user_name_tv"
+            android:layout_width="346dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="sans-serif-black"
+            android:text="USRENAME"
+            android:textAlignment="textStart"
+            android:textColor="#8F9191"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@id/photo_iv"
+            app:layout_constraintEnd_toStartOf="@id/more_ic"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/more_ic"
+            android:layout_width="25dp"
+            android:layout_height="37dp"
+            android:background="@drawable/ic_more_horiz"
+            app:layout_constraintBottom_toTopOf="@id/photo_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/like_btn_tv"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/like_heart"
+            android:shadowColor="#F5F0F0"
+            android:shadowRadius="8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/photo_iv"
+            app:layout_constraintVertical_bias="0.116" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            app:layout_constraintStart_toEndOf="@id/like_btn_tv"
+            app:layout_constraintTop_toBottomOf="@id/photo_iv"
+            android:background="@drawable/ic_comment"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/like_btn_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="37dp"
+            android:background="@drawable/profile_circle"
+            app:layout_constraintBottom_toTopOf="@id/photo_iv"
+            app:layout_constraintEnd_toStartOf="@id/user_name_tv"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
